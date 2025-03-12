@@ -1,0 +1,139 @@
+body {
+    background-color: rgb(255, 244, 252);
+    font-size: 15px;
+    font-family: Arial;
+    font-weight: bolder;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.principal {
+    font-family: Arial;
+    display: grid;
+    width: 100%;
+}
+
+.contenedor1 {
+    border: 2px solid #a16594;
+    display: grid;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #a16594;
+    color: white;
+    margin: 0 10px;
+}
+
+.contenedores {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    height: 100%;
+    gap: 20px;
+    margin: 50px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+p {
+    margin-top: 0px;
+    padding: 10px;
+    font-size: 20px;
+    background-color:#a16594;
+    color:white;
+}
+
+.contenedor2, .contenedor3, .contenedor4 {
+    border: 1px solid #a16594;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(211, 151, 195, 0.815);
+    width: 100%;
+}
+
+.contenedor2 img, .contenedor3 img, .contenedor4 img {
+    width: 100%; 
+    height: auto; 
+    margin: auto;
+}
+
+a {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #a16594;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .contenedores {
+        grid-template-columns: 1fr; 
+        gap: 10px;
+        margin: 10px;
+        padding-top: 10px;
+    }
+
+    .contenedor1 {
+        margin: 0; 
+    }
+
+    .contenedor2, .contenedor3, .contenedor4 {
+        width: 100%; 
+    }
+
+    .contenedor2 img, .contenedor3 img, .contenedor4 img {
+        width: 100%; 
+        height: auto;
+    }
+
+    p {
+        font-size: 18px; 
+    }
+
+    a {
+        width: auto; 
+        padding: 8px; 
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .contenedores {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+        margin: 30px;
+    }
+
+    .contenedor2 img, .contenedor3 img, .contenedor4 img {
+        width: 100%; 
+        height: auto;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .contenedores {
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        gap: 20px;
+        margin: 50px;
+    }
+
+    .contenedor2 img, .contenedor3 img, .contenedor4 img {
+        width: 400px; 
+        height: 300px;
+    }
+}
